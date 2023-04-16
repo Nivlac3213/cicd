@@ -1,6 +1,6 @@
 """
 Test the main module.
-Author: Wolf Paulus (wolf@paulus.com)
+Author: Wolf Paulus (wolf@paulus.com), Calvin Henggeler (Henggelc@my.erau.edu)
 """
 from unittest import TestCase
 from main import is_odd, is_odd_str, is_calvin_henggeler
@@ -23,5 +23,7 @@ class Test(TestCase):
     def test_is_calvin_henggeler(self):
         assert is_calvin_henggeler("Calvin") == "Hello, Calvin!"
         assert is_calvin_henggeler("calvin") == "Hello, Calvin!"
-        assert is_calvin_henggeler("Dr. Wolf Palus") == "You are not Calvin"
-        assert is_calvin_henggeler("#1") == "You are not Calvin"
+        assert is_calvin_henggeler("Calvin Henggeler") == "Hello, Calvin!"
+        assert is_calvin_henggeler("Calvin+Henggeler") == "Hello, Calvin!"
+        assert is_calvin_henggeler("Dr. Wolf Palus") == "Dr. Wolf Palus, You are not Calvin"
+        assert is_calvin_henggeler("#1") == "#1, You are not Calvin"

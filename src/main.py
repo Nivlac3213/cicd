@@ -19,10 +19,10 @@ def is_odd_str(num: str) -> str:
 
 def is_calvin_henggeler(name: str) -> str:
 
-   lower_name = name.lower()
-
-   if lower_name == "calvin":
-       return "Hello, Calvin!"
-   else:
-       return "You are not Calvin"
+    lower_name = name.lower()
+    accepted_name_froms = ["calvin", "calvin henggeler", "calvin+henggeler"]
+    if lower_name in accepted_name_froms:
+        return "Hello, Calvin!"
+    else:
+        return f"{name}, You are not Calvin"
 
