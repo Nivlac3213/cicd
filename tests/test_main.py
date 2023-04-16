@@ -23,5 +23,5 @@ class Test(TestCase):
     def test_is_calvin_henggeler(self):
         assert is_calvin_henggeler("Calvin Henggeler") == "Hello, Calvin!"
         assert is_calvin_henggeler("calvin henggeler") == "Hello, Calvin!"
-        assert is_calvin_henggeler("Dr. Wolf Palus") == "You are not Calvin Henggeler"
-        assert is_calvin_henggeler("#1") == "You are not Calvin Henggeler"
+        assert is_calvin_henggeler("Dr. Wolf Palus") == "You are not Calvin"
+        assert is_calvin_henggeler("#1") == "You are not Calvin"
