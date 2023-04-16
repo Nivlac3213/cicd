@@ -19,6 +19,10 @@ def is_odd_str(num: str) -> str:
 
 def is_calvin_henggeler(name: str) -> str:
 
+    if '+' in name:
+        split_name = name.split('+')
+        name = " ".join(split_name)
+
     lower_name = name.lower()
     accepted_name_froms = ["calvin", "calvin henggeler", "calvin+henggeler"]
     if lower_name in accepted_name_froms:

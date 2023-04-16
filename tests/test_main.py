@@ -26,4 +26,5 @@ class Test(TestCase):
         assert is_calvin_henggeler("Calvin Henggeler") == "Hello, Calvin!"
         assert is_calvin_henggeler("Calvin+Henggeler") == "Hello, Calvin!"
         assert is_calvin_henggeler("Dr. Wolf Palus") == "Dr. Wolf Palus, You are not Calvin"
+        assert is_calvin_henggeler("Freddy+Mercury") == "Freddy Mercury, You are not Calvin"
         assert is_calvin_henggeler("#1") == "#1, You are not Calvin"
