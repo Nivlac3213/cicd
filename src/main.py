@@ -21,8 +21,8 @@ def is_calvin_henggeler(name: str) -> str:
 
    lower_name = name.lower()
 
-   if lower_name == "calvin henggeler":
+   if lower_name == "calvin":
        return "Hello, Calvin!"
    else:
-       return "You are not Calvin Henggeler"
+       return "You are not Calvin"
 
