@@ -17,10 +17,7 @@ class MyServer(BaseHTTPRequestHandler):
         elif self.path == "/" or self.path.startswith("/?name="):
             status = 200
             name = self.path.split("=")[1] if self.path.startswith("/?name=") else ""
-            if name.isspace():
-                result = ""
-            else:
-                result = is_calvin_henggeler(name)
+            result = "" if name is "" else is_calvin_henggeler(name)
             # result = f"{number} is {'odd' if is_odd(int(number)) else 'even'}." if number.isnumeric() else ""
             with open('./src/response.html', 'r') as f:
                 # read the html template and fill in the parameters: path, time and result
