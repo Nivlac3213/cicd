@@ -15,3 +15,14 @@ def is_odd_str(num: str) -> str:
         return f"{num} is {'odd' if is_odd(int(num)) else 'even'}."
     else:
         return "Please enter a number."
+
+
+def is_calvin_henggeler(name: str) -> str:
+
+   lower_name = name.lower()
+
+   if lower_name == "calvin henggeler":
+       return "Hello, Calvin!"
+   else:
+       return "You are not Calvin Henggeler"
+
